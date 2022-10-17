@@ -1,6 +1,6 @@
 function getStatus() {
     $.ajax({
-        url: "http://localhost:8080/api/Reservation/report-status",
+        url: "http://193.122.149.200:8080/api/Reservation/report-status",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta) {
@@ -24,7 +24,7 @@ function pintarStatus(respuesta) {
 
 function getFechas() {
     $.ajax({
-        url: "http://localhost:8080/api/Reservation/report-dates/{dateOne}/{dateTwo}",
+        url: "http://193.122.149.200:8080/api/Reservation/report-dates/{dateOne}/{dateTwo}",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta) {
@@ -50,7 +50,7 @@ function pintarFechas() {
 function getClientes() {
 
     $.ajax({
-        url: "http://localhost:8080/api/Reservation/report-clients",
+        url: "http://193.122.149.200:8080/api/Reservation/report-clients",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta) {
